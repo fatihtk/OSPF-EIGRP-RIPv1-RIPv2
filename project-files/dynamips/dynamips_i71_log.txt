@@ -1,0 +1,38 @@
+Sep 23 07:50:12.462 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Sep 23 07:50:12.462 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 58072.
+Sep 23 07:50:12.495 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 23 07:50:12.496 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ulas/GNS3/projects/OSPF EIGRP RIPv1 RIPv2/project-files/dynamips 
+Sep 23 07:50:12.496 GENERAL: working_dir=/home/ulas/GNS3/projects/OSPF EIGRP RIPv1 RIPv2/project-files/dynamips
+Sep 23 07:50:12.497 HYPERVISOR: exec_cmd: vm create R9 9 c7200 
+Sep 23 07:50:12.497 VM: VM R9 created.
+Sep 23 07:50:12.504 HYPERVISOR: exec_cmd: vm set_con_tcp_port R9 5008 
+Sep 23 07:50:12.517 HYPERVISOR: exec_cmd: c7200 get_mac_addr R9 
+Sep 23 07:50:12.518 HYPERVISOR: exec_cmd: vm get_status R9 
+Sep 23 07:50:12.520 HYPERVISOR: exec_cmd: vm slot_add_binding R9 0 0 C7200-IO-FE 
+Sep 23 07:50:12.526 HYPERVISOR: exec_cmd: vm get_status R9 
+Sep 23 07:50:12.537 HYPERVISOR: exec_cmd: vm slot_add_binding R9 1 0 PA-4T+ 
+Sep 23 07:50:12.540 HYPERVISOR: exec_cmd: vm set_nvram R9 512 
+Sep 23 07:50:12.541 HYPERVISOR: exec_cmd: vm set_ram R9 512 
+Sep 23 07:50:12.543 HYPERVISOR: exec_cmd: vm set_ios R9 /home/ulas/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Sep 23 07:50:12.545 HYPERVISOR: exec_cmd: vm get_status R9 
+Sep 23 07:50:12.546 HYPERVISOR: exec_cmd: vm set_idle_pc R9 0x61c32cfc 
+Sep 23 07:50:12.548 HYPERVISOR: exec_cmd: vm set_disk0 R9 0 
+Sep 23 07:50:12.550 HYPERVISOR: exec_cmd: vm get_status R9 
+Sep 23 07:50:12.557 HYPERVISOR: exec_cmd: vm slot_add_binding R9 2 0 PA-4T+ 
+Sep 23 07:50:12.568 HYPERVISOR: exec_cmd: c7200 set_mac_addr R9 ca09.0a7f.0000 
+Sep 23 07:50:12.570 HYPERVISOR: exec_cmd: vm get_status R9 
+Sep 23 07:50:12.574 HYPERVISOR: exec_cmd: vm slot_remove_binding R9 0 0 
+Sep 23 07:50:12.575 HYPERVISOR: exec_cmd: vm get_status R9 
+Sep 23 07:50:12.576 HYPERVISOR: exec_cmd: vm slot_add_binding R9 0 0 C7200-IO-2FE 
+Sep 23 07:50:12.577 HYPERVISOR: exec_cmd: vm set_config R9 configs/i9_startup-config.cfg 
+Sep 23 07:50:12.579 HYPERVISOR: exec_cmd: vm set_config R9 configs/i9_startup-config.cfg configs/i9_private-config.cfg 
+Sep 23 07:50:13.658 HYPERVISOR: exec_cmd: nio create_udp udp-b346a072-e937-40fd-9170-7f635c696887 10025 127.0.0.1 10024 
+Sep 23 07:50:13.665 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R9 1 0 udp-b346a072-e937-40fd-9170-7f635c696887 
+Sep 23 07:50:13.670 HYPERVISOR: exec_cmd: vm get_status R9 
+Sep 23 08:54:06.354 HYPERVISOR: exec_cmd: vm get_status R9 
+Sep 23 08:54:06.364 HYPERVISOR: exec_cmd: vm extract_config R9 
+Sep 23 08:54:06.370 HYPERVISOR: exec_cmd: vm delete R9 
+Sep 23 08:54:06.370 VM: VM R9 destroyed.
+Sep 23 08:54:06.376 HYPERVISOR: exec_cmd: hypervisor stop 
+Sep 23 08:54:06.526 HYPERVISOR: Stopped.
+Sep 23 08:54:06.527 GENERAL: reset done.

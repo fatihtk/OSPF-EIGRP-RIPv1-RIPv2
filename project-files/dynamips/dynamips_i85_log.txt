@@ -1,0 +1,22 @@
+Sep 23 07:50:12.844 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Sep 23 07:50:12.844 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 51274.
+Sep 23 07:50:12.869 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 23 07:50:12.876 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ulas/GNS3/projects/OSPF EIGRP RIPv1 RIPv2/project-files/dynamips 
+Sep 23 07:50:12.876 GENERAL: working_dir=/home/ulas/GNS3/projects/OSPF EIGRP RIPv1 RIPv2/project-files/dynamips
+Sep 23 07:50:12.879 HYPERVISOR: exec_cmd: ethsw create SW1 
+Sep 23 07:50:13.998 HYPERVISOR: exec_cmd: nio create_udp udp-2f868b4f-5994-4f5f-a2e0-13428c5297d8 10051 127.0.0.1 10050 
+Sep 23 07:50:14.003 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-2f868b4f-5994-4f5f-a2e0-13428c5297d8 
+Sep 23 07:50:14.009 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-2f868b4f-5994-4f5f-a2e0-13428c5297d8 1 
+Sep 23 07:50:14.020 HYPERVISOR: exec_cmd: nio create_udp udp-15cd15f6-c3ab-477e-906a-ab015d175b32 10053 127.0.0.1 10052 
+Sep 23 07:50:14.020 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-15cd15f6-c3ab-477e-906a-ab015d175b32 
+Sep 23 07:50:14.029 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-15cd15f6-c3ab-477e-906a-ab015d175b32 1 
+Sep 23 07:50:14.034 HYPERVISOR: exec_cmd: nio create_udp udp-b48348c8-a541-477d-8162-f5087b5e782f 10054 127.0.0.1 10055 
+Sep 23 07:50:14.040 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-b48348c8-a541-477d-8162-f5087b5e782f 
+Sep 23 07:50:14.049 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-b48348c8-a541-477d-8162-f5087b5e782f 1 
+Sep 23 07:50:14.060 HYPERVISOR: exec_cmd: nio create_udp udp-2d434069-86f3-41be-8992-fd2b27b2494e 10056 127.0.0.1 10057 
+Sep 23 07:50:14.061 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-2d434069-86f3-41be-8992-fd2b27b2494e 
+Sep 23 07:50:14.071 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-2d434069-86f3-41be-8992-fd2b27b2494e 1 
+Sep 23 08:54:05.926 HYPERVISOR: exec_cmd: ethsw delete SW1 
+Sep 23 08:54:06.002 HYPERVISOR: exec_cmd: hypervisor stop 
+Sep 23 08:54:06.285 HYPERVISOR: Stopped.
+Sep 23 08:54:06.285 GENERAL: reset done.

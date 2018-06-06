@@ -1,0 +1,44 @@
+Sep 23 07:50:12.515 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Sep 23 07:50:12.515 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 43374.
+Sep 23 07:50:12.546 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 23 07:50:12.547 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ulas/GNS3/projects/OSPF EIGRP RIPv1 RIPv2/project-files/dynamips 
+Sep 23 07:50:12.547 GENERAL: working_dir=/home/ulas/GNS3/projects/OSPF EIGRP RIPv1 RIPv2/project-files/dynamips
+Sep 23 07:50:12.549 HYPERVISOR: exec_cmd: vm create R11 12 c7200 
+Sep 23 07:50:12.550 VM: VM R11 created.
+Sep 23 07:50:12.557 HYPERVISOR: exec_cmd: vm set_con_tcp_port R11 5011 
+Sep 23 07:50:12.568 HYPERVISOR: exec_cmd: c7200 get_mac_addr R11 
+Sep 23 07:50:12.569 HYPERVISOR: exec_cmd: vm get_status R11 
+Sep 23 07:50:12.573 HYPERVISOR: exec_cmd: vm slot_add_binding R11 0 0 C7200-IO-FE 
+Sep 23 07:50:12.574 HYPERVISOR: exec_cmd: vm get_status R11 
+Sep 23 07:50:12.576 HYPERVISOR: exec_cmd: vm slot_add_binding R11 1 0 PA-4T+ 
+Sep 23 07:50:12.577 HYPERVISOR: exec_cmd: vm set_nvram R11 512 
+Sep 23 07:50:12.578 HYPERVISOR: exec_cmd: vm set_ram R11 512 
+Sep 23 07:50:12.581 HYPERVISOR: exec_cmd: vm set_ios R11 /home/ulas/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Sep 23 07:50:12.588 HYPERVISOR: exec_cmd: vm get_status R11 
+Sep 23 07:50:12.602 HYPERVISOR: exec_cmd: vm set_idle_pc R11 0x61c32cfc 
+Sep 23 07:50:12.604 HYPERVISOR: exec_cmd: vm set_disk0 R11 0 
+Sep 23 07:50:12.605 HYPERVISOR: exec_cmd: vm get_status R11 
+Sep 23 07:50:12.606 HYPERVISOR: exec_cmd: vm slot_add_binding R11 2 0 PA-4T+ 
+Sep 23 07:50:12.607 HYPERVISOR: exec_cmd: c7200 set_mac_addr R11 ca0c.0df1.0000 
+Sep 23 07:50:12.609 HYPERVISOR: exec_cmd: vm get_status R11 
+Sep 23 07:50:12.610 HYPERVISOR: exec_cmd: vm slot_remove_binding R11 0 0 
+Sep 23 07:50:12.617 HYPERVISOR: exec_cmd: vm get_status R11 
+Sep 23 07:50:12.628 HYPERVISOR: exec_cmd: vm slot_add_binding R11 0 0 C7200-IO-2FE 
+Sep 23 07:50:12.630 HYPERVISOR: exec_cmd: vm set_config R11 configs/i12_startup-config.cfg 
+Sep 23 07:50:12.632 HYPERVISOR: exec_cmd: vm set_config R11 configs/i12_startup-config.cfg configs/i12_private-config.cfg 
+Sep 23 07:50:13.723 HYPERVISOR: exec_cmd: nio create_udp udp-3aa3666f-3fa7-4023-91d1-8f4b169ca900 10028 127.0.0.1 10029 
+Sep 23 07:50:13.724 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R11 1 0 udp-3aa3666f-3fa7-4023-91d1-8f4b169ca900 
+Sep 23 07:50:13.724 HYPERVISOR: exec_cmd: vm get_status R11 
+Sep 23 07:50:13.771 HYPERVISOR: exec_cmd: nio create_udp udp-415b2ae4-c7ca-49e1-946d-eb08f4a4e311 10032 127.0.0.1 10033 
+Sep 23 07:50:13.776 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R11 1 1 udp-415b2ae4-c7ca-49e1-946d-eb08f4a4e311 
+Sep 23 07:50:13.785 HYPERVISOR: exec_cmd: vm get_status R11 
+Sep 23 07:50:14.056 HYPERVISOR: exec_cmd: nio create_udp udp-f695e91a-1e40-46f9-85f1-79eae0978384 10057 127.0.0.1 10056 
+Sep 23 07:50:14.061 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R11 0 0 udp-f695e91a-1e40-46f9-85f1-79eae0978384 
+Sep 23 07:50:14.061 HYPERVISOR: exec_cmd: vm get_status R11 
+Sep 23 08:54:06.355 HYPERVISOR: exec_cmd: vm get_status R11 
+Sep 23 08:54:06.364 HYPERVISOR: exec_cmd: vm extract_config R11 
+Sep 23 08:54:06.370 HYPERVISOR: exec_cmd: vm delete R11 
+Sep 23 08:54:06.370 VM: VM R11 destroyed.
+Sep 23 08:54:06.377 HYPERVISOR: exec_cmd: hypervisor stop 
+Sep 23 08:54:06.536 HYPERVISOR: Stopped.
+Sep 23 08:54:06.536 GENERAL: reset done.

@@ -1,0 +1,67 @@
+Aug 20 18:53:24.735 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Aug 20 18:53:24.735 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 57470.
+Aug 20 18:53:24.749 HYPERVISOR: exec_cmd: hypervisor version 
+Aug 20 18:53:24.750 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ulas/GNS3/projects/OSPF EIGRP RIPv1 RIPv2/project-files/dynamips 
+Aug 20 18:53:24.750 GENERAL: working_dir=/home/ulas/GNS3/projects/OSPF EIGRP RIPv1 RIPv2/project-files/dynamips
+Aug 20 18:53:24.750 HYPERVISOR: exec_cmd: vm create R21 22 c7200 
+Aug 20 18:53:24.750 VM: VM R21 created.
+Aug 20 18:53:24.750 HYPERVISOR: exec_cmd: vm set_con_tcp_port R21 5021 
+Aug 20 18:53:24.751 HYPERVISOR: exec_cmd: c7200 get_mac_addr R21 
+Aug 20 18:53:24.751 HYPERVISOR: exec_cmd: vm get_status R21 
+Aug 20 18:53:24.752 HYPERVISOR: exec_cmd: vm slot_add_binding R21 0 0 C7200-IO-FE 
+Aug 20 18:53:24.752 HYPERVISOR: exec_cmd: vm get_status R21 
+Aug 20 18:53:24.752 HYPERVISOR: exec_cmd: vm slot_add_binding R21 1 0 PA-4T+ 
+Aug 20 18:53:24.753 HYPERVISOR: exec_cmd: vm set_disk0 R21 0 
+Aug 20 18:53:24.753 HYPERVISOR: exec_cmd: vm get_status R21 
+Aug 20 18:53:24.753 HYPERVISOR: exec_cmd: vm set_idle_pc R21 0x61e05874 
+Aug 20 18:53:24.754 HYPERVISOR: exec_cmd: vm set_ram R21 512 
+Aug 20 18:53:24.754 HYPERVISOR: exec_cmd: vm get_status R21 
+Aug 20 18:53:24.755 HYPERVISOR: exec_cmd: vm slot_add_binding R21 2 0 PA-4T+ 
+Aug 20 18:53:24.755 HYPERVISOR: exec_cmd: vm get_status R21 
+Aug 20 18:53:24.756 HYPERVISOR: exec_cmd: vm slot_remove_binding R21 0 0 
+Aug 20 18:53:24.756 HYPERVISOR: exec_cmd: vm get_status R21 
+Aug 20 18:53:24.756 HYPERVISOR: exec_cmd: vm slot_add_binding R21 0 0 C7200-IO-2FE 
+Aug 20 18:53:24.757 HYPERVISOR: exec_cmd: vm set_nvram R21 512 
+Aug 20 18:53:24.757 HYPERVISOR: exec_cmd: vm set_ios R21 /home/ulas/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Aug 20 18:53:24.758 HYPERVISOR: exec_cmd: vm set_config R21 configs/i22_startup-config.cfg 
+Aug 20 18:57:30.667 HYPERVISOR: exec_cmd: nio create_udp udp-f957b825-0841-4e36-9d22-0b4ca932f169 10059 127.0.0.1 10058 
+Aug 20 18:57:30.679 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R21 1 0 udp-f957b825-0841-4e36-9d22-0b4ca932f169 
+Aug 20 18:57:30.680 HYPERVISOR: exec_cmd: vm get_status R21 
+Aug 20 18:58:50.929 HYPERVISOR: exec_cmd: vm set_ghost_status R21 2 
+Aug 20 18:58:50.929 HYPERVISOR: exec_cmd: vm set_ghost_file R21 c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Aug 20 18:58:50.930 HYPERVISOR: exec_cmd: vm get_status R21 
+Aug 20 18:58:50.930 HYPERVISOR: exec_cmd: vm start R21 
+Aug 20 18:59:19.276 HYPERVISOR: exec_cmd: vm get_status R21 
+Aug 20 18:59:19.363 HYPERVISOR: exec_cmd: vm set_idle_pc_online R21 0 0x61e31ac4 
+Aug 20 18:59:32.151 HYPERVISOR: exec_cmd: vm extract_config R21 
+Aug 20 18:59:32.869 HYPERVISOR: exec_cmd: vm get_status R21 
+Aug 20 18:59:32.871 HYPERVISOR: exec_cmd: vm stop R21 
+Aug 20 18:59:32.991 VM: VM R21 shutdown.
+Aug 20 18:59:32.992 HYPERVISOR: exec_cmd: vm extract_config R21 
+Aug 20 19:14:31.632 HYPERVISOR: exec_cmd: vm get_status R21 
+Aug 20 19:14:31.635 HYPERVISOR: exec_cmd: vm start R21 
+Aug 20 19:32:15.272 HYPERVISOR: exec_cmd: vm extract_config R21 
+Aug 20 19:49:05.878 HYPERVISOR: exec_cmd: vm extract_config R21 
+Aug 20 19:49:07.006 HYPERVISOR: exec_cmd: vm get_status R21 
+Aug 20 19:49:07.033 HYPERVISOR: exec_cmd: vm stop R21 
+Aug 20 19:49:07.188 VM: VM R21 shutdown.
+Aug 20 19:49:07.200 HYPERVISOR: exec_cmd: vm extract_config R21 
+Aug 20 19:49:07.341 HYPERVISOR: exec_cmd: vm extract_config R21 
+Aug 20 20:00:20.350 HYPERVISOR: exec_cmd: vm get_status R21 
+Aug 20 20:00:20.353 HYPERVISOR: exec_cmd: vm start R21 
+Aug 20 20:01:21.564 HYPERVISOR: exec_cmd: vm get_status R21 
+Aug 20 20:01:21.631 HYPERVISOR: exec_cmd: vm set_idle_pc_online R21 0 0x61c32cfc 
+Aug 20 20:24:06.981 HYPERVISOR: exec_cmd: vm extract_config R21 
+Aug 20 20:24:08.215 HYPERVISOR: exec_cmd: vm extract_config R21 
+Aug 20 20:24:09.479 HYPERVISOR: exec_cmd: vm extract_config R21 
+Aug 20 20:24:13.144 HYPERVISOR: exec_cmd: vm get_status R21 
+Aug 20 20:24:13.173 HYPERVISOR: exec_cmd: vm stop R21 
+Aug 20 20:24:13.281 VM: VM R21 shutdown.
+Aug 20 20:24:13.283 HYPERVISOR: exec_cmd: vm extract_config R21 
+Aug 20 20:24:35.204 HYPERVISOR: exec_cmd: vm get_status R21 
+Aug 20 20:24:35.211 HYPERVISOR: exec_cmd: vm extract_config R21 
+Aug 20 20:24:35.221 HYPERVISOR: exec_cmd: vm delete R21 
+Aug 20 20:24:35.221 VM: VM R21 destroyed.
+Aug 20 20:24:35.231 HYPERVISOR: exec_cmd: hypervisor stop 
+Aug 20 20:24:35.325 HYPERVISOR: Stopped.
+Aug 20 20:24:35.325 GENERAL: reset done.

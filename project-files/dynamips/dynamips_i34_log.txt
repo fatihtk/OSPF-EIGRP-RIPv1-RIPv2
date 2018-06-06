@@ -1,0 +1,56 @@
+Aug 20 20:31:36.255 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Aug 20 20:31:36.255 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 32830.
+Aug 20 20:31:36.263 HYPERVISOR: exec_cmd: hypervisor version 
+Aug 20 20:31:36.264 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ulas/GNS3/projects/OSPF EIGRP RIPv1 RIPv2/project-files/dynamips 
+Aug 20 20:31:36.264 GENERAL: working_dir=/home/ulas/GNS3/projects/OSPF EIGRP RIPv1 RIPv2/project-files/dynamips
+Aug 20 20:31:36.265 HYPERVISOR: exec_cmd: vm create R5 5 c7200 
+Aug 20 20:31:36.265 VM: VM R5 created.
+Aug 20 20:31:36.266 HYPERVISOR: exec_cmd: vm set_con_tcp_port R5 5004 
+Aug 20 20:31:36.267 HYPERVISOR: exec_cmd: c7200 get_mac_addr R5 
+Aug 20 20:31:36.270 HYPERVISOR: exec_cmd: vm get_status R5 
+Aug 20 20:31:36.272 HYPERVISOR: exec_cmd: vm slot_add_binding R5 0 0 C7200-IO-FE 
+Aug 20 20:31:36.276 HYPERVISOR: exec_cmd: vm get_status R5 
+Aug 20 20:31:36.281 HYPERVISOR: exec_cmd: vm set_idle_pc R5 0x61c32cfc 
+Aug 20 20:31:36.284 HYPERVISOR: exec_cmd: vm get_status R5 
+Aug 20 20:31:36.285 HYPERVISOR: exec_cmd: vm slot_add_binding R5 2 0 PA-4T+ 
+Aug 20 20:31:36.286 HYPERVISOR: exec_cmd: vm get_status R5 
+Aug 20 20:31:36.287 HYPERVISOR: exec_cmd: vm slot_add_binding R5 1 0 PA-4T+ 
+Aug 20 20:31:36.288 HYPERVISOR: exec_cmd: vm set_ram R5 512 
+Aug 20 20:31:36.289 HYPERVISOR: exec_cmd: vm set_disk0 R5 0 
+Aug 20 20:31:36.290 HYPERVISOR: exec_cmd: c7200 set_mac_addr R5 ca05.0a43.0000 
+Aug 20 20:31:36.291 HYPERVISOR: exec_cmd: vm get_status R5 
+Aug 20 20:31:36.292 HYPERVISOR: exec_cmd: vm slot_remove_binding R5 0 0 
+Aug 20 20:31:36.309 HYPERVISOR: exec_cmd: vm get_status R5 
+Aug 20 20:31:36.328 HYPERVISOR: exec_cmd: vm slot_add_binding R5 0 0 C7200-IO-2FE 
+Aug 20 20:31:36.332 HYPERVISOR: exec_cmd: vm set_nvram R5 512 
+Aug 20 20:31:36.335 HYPERVISOR: exec_cmd: vm set_ios R5 /home/ulas/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Aug 20 20:31:36.337 HYPERVISOR: exec_cmd: vm set_config R5 configs/i5_startup-config.cfg 
+Aug 20 20:31:36.338 HYPERVISOR: exec_cmd: vm set_config R5 configs/i5_startup-config.cfg configs/i5_private-config.cfg 
+Aug 20 20:31:37.427 HYPERVISOR: exec_cmd: nio create_udp udp-34f0a499-4a3d-49c3-9d14-8a19b47a5c33 10004 127.0.0.1 10000 
+Aug 20 20:31:37.439 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 1 1 udp-34f0a499-4a3d-49c3-9d14-8a19b47a5c33 
+Aug 20 20:31:37.442 HYPERVISOR: exec_cmd: vm get_status R5 
+Aug 20 20:31:37.523 HYPERVISOR: exec_cmd: nio create_udp udp-a8f0e932-cc9c-46cd-951a-55f7ed6d931f 10008 127.0.0.1 10005 
+Aug 20 20:31:37.530 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 1 0 udp-a8f0e932-cc9c-46cd-951a-55f7ed6d931f 
+Aug 20 20:31:37.534 HYPERVISOR: exec_cmd: vm get_status R5 
+Aug 20 20:31:37.594 HYPERVISOR: exec_cmd: nio create_udp udp-7305c6aa-b655-44cd-a67c-4d4dbec5954b 10014 127.0.0.1 10009 
+Aug 20 20:31:37.596 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 1 3 udp-7305c6aa-b655-44cd-a67c-4d4dbec5954b 
+Aug 20 20:31:37.597 HYPERVISOR: exec_cmd: vm get_status R5 
+Aug 20 20:31:37.843 HYPERVISOR: exec_cmd: nio create_udp udp-581d24df-d700-4368-975e-e8c8d33f6efc 10036 127.0.0.1 10038 
+Aug 20 20:31:37.845 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 2 0 udp-581d24df-d700-4368-975e-e8c8d33f6efc 
+Aug 20 20:31:37.861 HYPERVISOR: exec_cmd: vm get_status R5 
+Aug 20 20:32:36.686 HYPERVISOR: exec_cmd: vm set_ghost_status R5 2 
+Aug 20 20:32:36.690 HYPERVISOR: exec_cmd: vm set_ghost_file R5 c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Aug 20 20:32:36.691 HYPERVISOR: exec_cmd: vm get_status R5 
+Aug 20 20:32:36.703 HYPERVISOR: exec_cmd: vm start R5 
+Aug 20 21:08:49.773 HYPERVISOR: exec_cmd: vm extract_config R5 
+Aug 20 21:08:50.741 HYPERVISOR: exec_cmd: vm get_status R5 
+Aug 20 21:08:50.742 HYPERVISOR: exec_cmd: vm stop R5 
+Aug 20 21:08:50.874 VM: VM R5 shutdown.
+Aug 20 21:08:50.875 HYPERVISOR: exec_cmd: vm extract_config R5 
+Aug 20 21:09:04.133 HYPERVISOR: exec_cmd: vm get_status R5 
+Aug 20 21:09:04.140 HYPERVISOR: exec_cmd: vm extract_config R5 
+Aug 20 21:09:04.150 HYPERVISOR: exec_cmd: vm delete R5 
+Aug 20 21:09:04.150 VM: VM R5 destroyed.
+Aug 20 21:09:04.159 HYPERVISOR: exec_cmd: hypervisor stop 
+Aug 20 21:09:04.474 HYPERVISOR: Stopped.
+Aug 20 21:09:04.474 GENERAL: reset done.

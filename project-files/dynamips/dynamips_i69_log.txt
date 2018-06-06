@@ -1,0 +1,38 @@
+Sep 23 07:50:12.392 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Sep 23 07:50:12.392 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 46325.
+Sep 23 07:50:12.419 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 23 07:50:12.430 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ulas/GNS3/projects/OSPF EIGRP RIPv1 RIPv2/project-files/dynamips 
+Sep 23 07:50:12.430 GENERAL: working_dir=/home/ulas/GNS3/projects/OSPF EIGRP RIPv1 RIPv2/project-files/dynamips
+Sep 23 07:50:12.432 HYPERVISOR: exec_cmd: vm create R7 7 c7200 
+Sep 23 07:50:12.432 VM: VM R7 created.
+Sep 23 07:50:12.433 HYPERVISOR: exec_cmd: vm set_con_tcp_port R7 5006 
+Sep 23 07:50:12.435 HYPERVISOR: exec_cmd: c7200 get_mac_addr R7 
+Sep 23 07:50:12.436 HYPERVISOR: exec_cmd: vm get_status R7 
+Sep 23 07:50:12.437 HYPERVISOR: exec_cmd: vm slot_add_binding R7 0 0 C7200-IO-FE 
+Sep 23 07:50:12.440 HYPERVISOR: exec_cmd: vm get_status R7 
+Sep 23 07:50:12.441 HYPERVISOR: exec_cmd: vm slot_add_binding R7 1 0 PA-4T+ 
+Sep 23 07:50:12.444 HYPERVISOR: exec_cmd: vm set_nvram R7 512 
+Sep 23 07:50:12.451 HYPERVISOR: exec_cmd: vm set_ram R7 512 
+Sep 23 07:50:12.463 HYPERVISOR: exec_cmd: vm set_ios R7 /home/ulas/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Sep 23 07:50:12.465 HYPERVISOR: exec_cmd: vm get_status R7 
+Sep 23 07:50:12.466 HYPERVISOR: exec_cmd: vm set_idle_pc R7 0x61c32cfc 
+Sep 23 07:50:12.467 HYPERVISOR: exec_cmd: vm set_disk0 R7 0 
+Sep 23 07:50:12.469 HYPERVISOR: exec_cmd: vm get_status R7 
+Sep 23 07:50:12.470 HYPERVISOR: exec_cmd: vm slot_add_binding R7 2 0 PA-4T+ 
+Sep 23 07:50:12.477 HYPERVISOR: exec_cmd: c7200 set_mac_addr R7 ca07.0a61.0000 
+Sep 23 07:50:12.489 HYPERVISOR: exec_cmd: vm get_status R7 
+Sep 23 07:50:12.491 HYPERVISOR: exec_cmd: vm slot_remove_binding R7 0 0 
+Sep 23 07:50:12.493 HYPERVISOR: exec_cmd: vm get_status R7 
+Sep 23 07:50:12.494 HYPERVISOR: exec_cmd: vm slot_add_binding R7 0 0 C7200-IO-2FE 
+Sep 23 07:50:12.496 HYPERVISOR: exec_cmd: vm set_config R7 configs/i7_startup-config.cfg 
+Sep 23 07:50:12.497 HYPERVISOR: exec_cmd: vm set_config R7 configs/i7_startup-config.cfg configs/i7_private-config.cfg 
+Sep 23 07:50:13.543 HYPERVISOR: exec_cmd: nio create_udp udp-3b4069fa-5229-442f-81a9-07fc5ccf9be7 10013 127.0.0.1 10012 
+Sep 23 07:50:13.548 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R7 1 0 udp-3b4069fa-5229-442f-81a9-07fc5ccf9be7 
+Sep 23 07:50:13.549 HYPERVISOR: exec_cmd: vm get_status R7 
+Sep 23 08:54:06.351 HYPERVISOR: exec_cmd: vm get_status R7 
+Sep 23 08:54:06.362 HYPERVISOR: exec_cmd: vm extract_config R7 
+Sep 23 08:54:06.369 HYPERVISOR: exec_cmd: vm delete R7 
+Sep 23 08:54:06.369 VM: VM R7 destroyed.
+Sep 23 08:54:06.375 HYPERVISOR: exec_cmd: hypervisor stop 
+Sep 23 08:54:06.431 HYPERVISOR: Stopped.
+Sep 23 08:54:06.431 GENERAL: reset done.

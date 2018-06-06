@@ -1,0 +1,67 @@
+Aug 20 18:53:22.420 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Aug 20 18:53:22.420 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 41382.
+Aug 20 18:53:22.437 HYPERVISOR: exec_cmd: hypervisor version 
+Aug 20 18:53:22.438 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ulas/GNS3/projects/OSPF EIGRP RIPv1 RIPv2/project-files/dynamips 
+Aug 20 18:53:22.438 GENERAL: working_dir=/home/ulas/GNS3/projects/OSPF EIGRP RIPv1 RIPv2/project-files/dynamips
+Aug 20 18:53:22.438 HYPERVISOR: exec_cmd: vm create R20 21 c7200 
+Aug 20 18:53:22.439 VM: VM R20 created.
+Aug 20 18:53:22.439 HYPERVISOR: exec_cmd: vm set_con_tcp_port R20 5020 
+Aug 20 18:53:22.440 HYPERVISOR: exec_cmd: c7200 get_mac_addr R20 
+Aug 20 18:53:22.440 HYPERVISOR: exec_cmd: vm get_status R20 
+Aug 20 18:53:22.440 HYPERVISOR: exec_cmd: vm slot_add_binding R20 0 0 C7200-IO-FE 
+Aug 20 18:53:22.441 HYPERVISOR: exec_cmd: vm get_status R20 
+Aug 20 18:53:22.441 HYPERVISOR: exec_cmd: vm slot_add_binding R20 1 0 PA-4T+ 
+Aug 20 18:53:22.442 HYPERVISOR: exec_cmd: vm set_disk0 R20 0 
+Aug 20 18:53:22.442 HYPERVISOR: exec_cmd: vm get_status R20 
+Aug 20 18:53:22.442 HYPERVISOR: exec_cmd: vm set_idle_pc R20 0x61e05874 
+Aug 20 18:53:22.443 HYPERVISOR: exec_cmd: vm set_ram R20 512 
+Aug 20 18:53:22.443 HYPERVISOR: exec_cmd: vm get_status R20 
+Aug 20 18:53:22.444 HYPERVISOR: exec_cmd: vm slot_add_binding R20 2 0 PA-4T+ 
+Aug 20 18:53:22.444 HYPERVISOR: exec_cmd: vm get_status R20 
+Aug 20 18:53:22.444 HYPERVISOR: exec_cmd: vm slot_remove_binding R20 0 0 
+Aug 20 18:53:22.445 HYPERVISOR: exec_cmd: vm get_status R20 
+Aug 20 18:53:22.445 HYPERVISOR: exec_cmd: vm slot_add_binding R20 0 0 C7200-IO-2FE 
+Aug 20 18:53:22.446 HYPERVISOR: exec_cmd: vm set_nvram R20 512 
+Aug 20 18:53:22.446 HYPERVISOR: exec_cmd: vm set_ios R20 /home/ulas/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Aug 20 18:53:22.447 HYPERVISOR: exec_cmd: vm set_config R20 configs/i21_startup-config.cfg 
+Aug 20 18:57:24.660 HYPERVISOR: exec_cmd: nio create_udp udp-a01d22d2-ed7e-40cf-bda3-96ba85d57790 10057 127.0.0.1 10056 
+Aug 20 18:57:24.669 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R20 1 0 udp-a01d22d2-ed7e-40cf-bda3-96ba85d57790 
+Aug 20 18:57:24.670 HYPERVISOR: exec_cmd: vm get_status R20 
+Aug 20 18:58:50.906 HYPERVISOR: exec_cmd: vm set_ghost_status R20 2 
+Aug 20 18:58:50.908 HYPERVISOR: exec_cmd: vm set_ghost_file R20 c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Aug 20 18:58:50.909 HYPERVISOR: exec_cmd: vm get_status R20 
+Aug 20 18:58:50.909 HYPERVISOR: exec_cmd: vm start R20 
+Aug 20 18:59:19.217 HYPERVISOR: exec_cmd: vm get_status R20 
+Aug 20 18:59:19.287 HYPERVISOR: exec_cmd: vm set_idle_pc_online R20 0 0x61e31ac4 
+Aug 20 18:59:32.118 HYPERVISOR: exec_cmd: vm extract_config R20 
+Aug 20 18:59:32.870 HYPERVISOR: exec_cmd: vm get_status R20 
+Aug 20 18:59:32.871 HYPERVISOR: exec_cmd: vm stop R20 
+Aug 20 18:59:32.990 VM: VM R20 shutdown.
+Aug 20 18:59:33.002 HYPERVISOR: exec_cmd: vm extract_config R20 
+Aug 20 19:14:31.633 HYPERVISOR: exec_cmd: vm get_status R20 
+Aug 20 19:14:31.636 HYPERVISOR: exec_cmd: vm start R20 
+Aug 20 19:32:15.237 HYPERVISOR: exec_cmd: vm extract_config R20 
+Aug 20 19:49:05.844 HYPERVISOR: exec_cmd: vm extract_config R20 
+Aug 20 19:49:07.010 HYPERVISOR: exec_cmd: vm get_status R20 
+Aug 20 19:49:07.036 HYPERVISOR: exec_cmd: vm stop R20 
+Aug 20 19:49:07.186 VM: VM R20 shutdown.
+Aug 20 19:49:07.203 HYPERVISOR: exec_cmd: vm extract_config R20 
+Aug 20 19:49:07.216 HYPERVISOR: exec_cmd: vm extract_config R20 
+Aug 20 20:00:20.348 HYPERVISOR: exec_cmd: vm get_status R20 
+Aug 20 20:00:20.351 HYPERVISOR: exec_cmd: vm start R20 
+Aug 20 20:01:21.536 HYPERVISOR: exec_cmd: vm get_status R20 
+Aug 20 20:01:21.581 HYPERVISOR: exec_cmd: vm set_idle_pc_online R20 0 0x61c32cfc 
+Aug 20 20:24:06.948 HYPERVISOR: exec_cmd: vm extract_config R20 
+Aug 20 20:24:08.181 HYPERVISOR: exec_cmd: vm extract_config R20 
+Aug 20 20:24:09.447 HYPERVISOR: exec_cmd: vm extract_config R20 
+Aug 20 20:24:13.171 HYPERVISOR: exec_cmd: vm get_status R20 
+Aug 20 20:24:13.173 HYPERVISOR: exec_cmd: vm stop R20 
+Aug 20 20:24:13.295 VM: VM R20 shutdown.
+Aug 20 20:24:13.318 HYPERVISOR: exec_cmd: vm extract_config R20 
+Aug 20 20:24:35.205 HYPERVISOR: exec_cmd: vm get_status R20 
+Aug 20 20:24:35.212 HYPERVISOR: exec_cmd: vm extract_config R20 
+Aug 20 20:24:35.223 HYPERVISOR: exec_cmd: vm delete R20 
+Aug 20 20:24:35.223 VM: VM R20 destroyed.
+Aug 20 20:24:35.232 HYPERVISOR: exec_cmd: hypervisor stop 
+Aug 20 20:24:35.487 HYPERVISOR: Stopped.
+Aug 20 20:24:35.487 GENERAL: reset done.

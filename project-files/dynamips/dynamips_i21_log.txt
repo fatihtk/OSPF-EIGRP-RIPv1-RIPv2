@@ -1,0 +1,38 @@
+Sep 30 14:04:00.805 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Sep 30 14:04:00.805 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49566.
+Sep 30 14:04:00.847 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 30 14:04:00.848 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ulas/GNS3/projects/OSPF EIGRP RIPv1 RIPv2/project-files/dynamips 
+Sep 30 14:04:00.848 GENERAL: working_dir=/home/ulas/GNS3/projects/OSPF EIGRP RIPv1 RIPv2/project-files/dynamips
+Sep 30 14:04:00.849 HYPERVISOR: exec_cmd: vm create R21 22 c7200 
+Sep 30 14:04:00.849 VM: VM R21 created.
+Sep 30 14:04:00.851 HYPERVISOR: exec_cmd: vm set_con_tcp_port R21 5021 
+Sep 30 14:04:00.861 HYPERVISOR: exec_cmd: c7200 get_mac_addr R21 
+Sep 30 14:04:00.903 HYPERVISOR: exec_cmd: vm get_status R21 
+Sep 30 14:04:00.911 HYPERVISOR: exec_cmd: vm slot_add_binding R21 0 0 C7200-IO-FE 
+Sep 30 14:04:00.916 HYPERVISOR: exec_cmd: vm get_status R21 
+Sep 30 14:04:00.920 HYPERVISOR: exec_cmd: vm set_idle_pc R21 0x61c32cfc 
+Sep 30 14:04:00.924 HYPERVISOR: exec_cmd: vm set_disk0 R21 0 
+Sep 30 14:04:00.929 HYPERVISOR: exec_cmd: c7200 set_mac_addr R21 ca16.0e87.0000 
+Sep 30 14:04:00.942 HYPERVISOR: exec_cmd: vm get_status R21 
+Sep 30 14:04:00.946 HYPERVISOR: exec_cmd: vm slot_add_binding R21 1 0 PA-4T+ 
+Sep 30 14:04:00.948 HYPERVISOR: exec_cmd: vm get_status R21 
+Sep 30 14:04:00.950 HYPERVISOR: exec_cmd: vm slot_remove_binding R21 0 0 
+Sep 30 14:04:00.952 HYPERVISOR: exec_cmd: vm get_status R21 
+Sep 30 14:04:00.953 HYPERVISOR: exec_cmd: vm slot_add_binding R21 0 0 C7200-IO-2FE 
+Sep 30 14:04:00.965 HYPERVISOR: exec_cmd: vm set_ram R21 512 
+Sep 30 14:04:00.969 HYPERVISOR: exec_cmd: vm get_status R21 
+Sep 30 14:04:00.972 HYPERVISOR: exec_cmd: vm slot_add_binding R21 2 0 PA-4T+ 
+Sep 30 14:04:00.976 HYPERVISOR: exec_cmd: vm set_ios R21 /home/ulas/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Sep 30 14:04:00.978 HYPERVISOR: exec_cmd: vm set_nvram R21 512 
+Sep 30 14:04:00.979 HYPERVISOR: exec_cmd: vm set_config R21 configs/i22_startup-config.cfg 
+Sep 30 14:04:00.980 HYPERVISOR: exec_cmd: vm set_config R21 configs/i22_startup-config.cfg configs/i22_private-config.cfg 
+Sep 30 14:04:02.168 HYPERVISOR: exec_cmd: nio create_udp udp-092bbcd8-f3c7-4f39-8a5a-9b71713a1221 10059 127.0.0.1 10058 
+Sep 30 14:04:02.169 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R21 1 0 udp-092bbcd8-f3c7-4f39-8a5a-9b71713a1221 
+Sep 30 14:04:02.169 HYPERVISOR: exec_cmd: vm get_status R21 
+Sep 30 14:15:44.388 HYPERVISOR: exec_cmd: vm get_status R21 
+Sep 30 14:15:44.400 HYPERVISOR: exec_cmd: vm extract_config R21 
+Sep 30 14:15:44.406 HYPERVISOR: exec_cmd: vm delete R21 
+Sep 30 14:15:44.406 VM: VM R21 destroyed.
+Sep 30 14:15:44.412 HYPERVISOR: exec_cmd: hypervisor stop 
+Sep 30 14:15:44.646 HYPERVISOR: Stopped.
+Sep 30 14:15:44.646 GENERAL: reset done.

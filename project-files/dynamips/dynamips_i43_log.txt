@@ -1,0 +1,59 @@
+Aug 20 20:31:36.575 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Aug 20 20:31:36.575 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 51791.
+Aug 20 20:31:36.616 HYPERVISOR: exec_cmd: hypervisor version 
+Aug 20 20:31:36.627 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ulas/GNS3/projects/OSPF EIGRP RIPv1 RIPv2/project-files/dynamips 
+Aug 20 20:31:36.628 GENERAL: working_dir=/home/ulas/GNS3/projects/OSPF EIGRP RIPv1 RIPv2/project-files/dynamips
+Aug 20 20:31:36.649 HYPERVISOR: exec_cmd: vm create R12 13 c7200 
+Aug 20 20:31:36.649 VM: VM R12 created.
+Aug 20 20:31:36.662 HYPERVISOR: exec_cmd: vm set_con_tcp_port R12 5012 
+Aug 20 20:31:36.665 HYPERVISOR: exec_cmd: c7200 get_mac_addr R12 
+Aug 20 20:31:36.666 HYPERVISOR: exec_cmd: vm get_status R12 
+Aug 20 20:31:36.668 HYPERVISOR: exec_cmd: vm slot_add_binding R12 0 0 C7200-IO-FE 
+Aug 20 20:31:36.669 HYPERVISOR: exec_cmd: vm get_status R12 
+Aug 20 20:31:36.670 HYPERVISOR: exec_cmd: vm set_idle_pc R12 0x61c32cfc 
+Aug 20 20:31:36.672 HYPERVISOR: exec_cmd: vm get_status R12 
+Aug 20 20:31:36.674 HYPERVISOR: exec_cmd: vm slot_add_binding R12 2 0 PA-4T+ 
+Aug 20 20:31:36.676 HYPERVISOR: exec_cmd: vm get_status R12 
+Aug 20 20:31:36.678 HYPERVISOR: exec_cmd: vm slot_add_binding R12 1 0 PA-4T+ 
+Aug 20 20:31:36.680 HYPERVISOR: exec_cmd: vm set_ram R12 512 
+Aug 20 20:31:36.681 HYPERVISOR: exec_cmd: vm set_disk0 R12 0 
+Aug 20 20:31:36.683 HYPERVISOR: exec_cmd: c7200 set_mac_addr R12 ca0d.0e00.0000 
+Aug 20 20:31:36.691 HYPERVISOR: exec_cmd: vm get_status R12 
+Aug 20 20:31:36.705 HYPERVISOR: exec_cmd: vm slot_remove_binding R12 0 0 
+Aug 20 20:31:36.707 HYPERVISOR: exec_cmd: vm get_status R12 
+Aug 20 20:31:36.708 HYPERVISOR: exec_cmd: vm slot_add_binding R12 0 0 C7200-IO-2FE 
+Aug 20 20:31:36.710 HYPERVISOR: exec_cmd: vm set_nvram R12 512 
+Aug 20 20:31:36.711 HYPERVISOR: exec_cmd: vm set_ios R12 /home/ulas/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Aug 20 20:31:36.713 HYPERVISOR: exec_cmd: vm set_config R12 configs/i13_startup-config.cfg 
+Aug 20 20:31:36.714 HYPERVISOR: exec_cmd: vm set_config R12 configs/i13_startup-config.cfg configs/i13_private-config.cfg 
+Aug 20 20:31:37.912 HYPERVISOR: exec_cmd: nio create_udp udp-bafa3122-99cf-4ae1-8ba2-da9d2ccfbf39 10041 127.0.0.1 10040 
+Aug 20 20:31:37.913 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R12 0 0 udp-bafa3122-99cf-4ae1-8ba2-da9d2ccfbf39 
+Aug 20 20:31:37.914 HYPERVISOR: exec_cmd: vm get_status R12 
+Aug 20 20:31:37.949 HYPERVISOR: exec_cmd: nio create_udp udp-50b75f2a-15a7-491f-a89d-189ed9460ad3 10043 127.0.0.1 10045 
+Aug 20 20:31:37.956 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R12 1 1 udp-50b75f2a-15a7-491f-a89d-189ed9460ad3 
+Aug 20 20:31:37.960 HYPERVISOR: exec_cmd: vm get_status R12 
+Aug 20 20:31:38.031 HYPERVISOR: exec_cmd: nio create_udp udp-6dd33f00-3b79-4766-b1c4-f7664a16400a 10049 127.0.0.1 10048 
+Aug 20 20:31:38.032 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R12 1 0 udp-6dd33f00-3b79-4766-b1c4-f7664a16400a 
+Aug 20 20:31:38.033 HYPERVISOR: exec_cmd: vm get_status R12 
+Aug 20 20:31:46.178 HYPERVISOR: exec_cmd: vm get_status R12 
+Aug 20 20:31:46.179 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R12 0 0 
+Aug 20 20:31:46.181 HYPERVISOR: exec_cmd: nio delete udp-bafa3122-99cf-4ae1-8ba2-da9d2ccfbf39 
+Aug 20 20:32:16.384 HYPERVISOR: exec_cmd: nio create_udp udp-ad88cf45-fd73-4145-9508-3f90883ee2af 10037 127.0.0.1 10039 
+Aug 20 20:32:16.393 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R12 0 0 udp-ad88cf45-fd73-4145-9508-3f90883ee2af 
+Aug 20 20:32:16.394 HYPERVISOR: exec_cmd: vm get_status R12 
+Aug 20 20:32:36.290 HYPERVISOR: exec_cmd: vm set_ghost_status R12 2 
+Aug 20 20:32:36.314 HYPERVISOR: exec_cmd: vm set_ghost_file R12 c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Aug 20 20:32:36.331 HYPERVISOR: exec_cmd: vm get_status R12 
+Aug 20 20:32:36.336 HYPERVISOR: exec_cmd: vm start R12 
+Aug 20 21:08:49.549 HYPERVISOR: exec_cmd: vm extract_config R12 
+Aug 20 21:08:50.512 HYPERVISOR: exec_cmd: vm get_status R12 
+Aug 20 21:08:50.512 HYPERVISOR: exec_cmd: vm stop R12 
+Aug 20 21:08:50.642 VM: VM R12 shutdown.
+Aug 20 21:08:50.657 HYPERVISOR: exec_cmd: vm extract_config R12 
+Aug 20 21:09:04.131 HYPERVISOR: exec_cmd: vm get_status R12 
+Aug 20 21:09:04.137 HYPERVISOR: exec_cmd: vm extract_config R12 
+Aug 20 21:09:04.146 HYPERVISOR: exec_cmd: vm delete R12 
+Aug 20 21:09:04.146 VM: VM R12 destroyed.
+Aug 20 21:09:04.158 HYPERVISOR: exec_cmd: hypervisor stop 
+Aug 20 21:09:04.314 HYPERVISOR: Stopped.
+Aug 20 21:09:04.314 GENERAL: reset done.
